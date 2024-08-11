@@ -42,6 +42,8 @@ class poseDetector():
 
 def main():
     pTime = 0
+    # aqui pode alterar o parametro do VideoCapture() ::» 0 ou 1 é o indece da webCam
+    # Ou pode alterar pela URL do video do esp32 cam
     cap = cv2.VideoCapture(0)
     detector = poseDetector()
     while True:
